@@ -1,16 +1,11 @@
-'''
-Created on Jan 10, 2017
-
-@author: hanif
-'''
-
 import pymysql
 
 
 class Database:
     def connect(self):
+        # return pymysql.connect("phonebook-mysql", "dev", "dev", "crud_flask")
 
-        return pymysql.connect(host="localhost", user="root", password="root", database="crud_flask",port="3306", charset='utf8mb4')
+        return pymysql.connect(host="localhost", user="dev", password="dev", database="crud_flask",port="3306", charset='utf8mb4')
 
     def read(self, id):
         con = Database.connect(self)
