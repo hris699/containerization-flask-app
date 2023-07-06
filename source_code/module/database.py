@@ -10,7 +10,7 @@ import pymysql
 class Database:
     def connect(self):
 
-        return pymysql.connect(host="db-mysql", user="root", password="root", database="crud_flask", charset='utf8mb4')
+        return pymysql.connect(host="localhost", user="root", password="root", database="crud_flask",port="3306", charset='utf8mb4')
 
     def read(self, id):
         con = Database.connect(self)
