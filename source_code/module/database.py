@@ -5,7 +5,7 @@ class Database:
     def connect(self):
         # return pymysql.connect("phonebook-mysql", "dev", "dev", "crud_flask")
 
-        return pymysql.connect(host="localhost", user="dev", password="dev", database="crud_flask",port="3306", charset='utf8mb4')
+        return pymysql.connect(host="localhost", user="dev", password="dev", database="crud_flask", charset='utf8mb4')
 
     def read(self, id):
         con = Database.connect(self)
